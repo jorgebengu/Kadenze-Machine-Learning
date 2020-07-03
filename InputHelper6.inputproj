@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<WekiInputHelperFileData>
+  <oscReceivePort>6448</oscReceivePort>
+  <oscSendPort>6449</oscSendPort>
+  <sendHostname>localhost</sendHostname>
+  <sendOscMessage>/wek/inputs</sendOscMessage>
+  <inputs>
+    <oscMessage>/wek/inputs</oscMessage>
+    <numInputs>13</numInputs>
+    <groupName>Inputs</groupName>
+    <inputNames>
+      <string>rawx</string>
+      <string>rawy</string>
+      <string>rawz</string>
+      <string>accx</string>
+      <string>accy</string>
+      <string>accz</string>
+      <string>rot1</string>
+      <string>rot2</string>
+      <string>rot3</string>
+      <string>rot4</string>
+      <string>azimuth</string>
+      <string>pitch</string>
+      <string>roll</string>
+    </inputNames>
+  </inputs>
+  <outputs>
+    <outputs class="linked-list"/>
+    <numOutputTypes>0</numOutputTypes>
+    <dimensionality>0</dimensionality>
+    <hasDependencies>false</hasDependencies>
+  </outputs>
+  <inputTriggerer class="wekiinputhelper.TriggerOnReceive">
+    <c>
+      <type>NONE</type>
+      <howLong>ONCE</howLong>
+      <index>0</index>
+      <val>0.0</val>
+      <appliesTo>INPUT</appliesTo>
+    </c>
+  </inputTriggerer>
+  <isSendingOriginalInputs>true</isSendingOriginalInputs>
+</WekiInputHelperFileData>
